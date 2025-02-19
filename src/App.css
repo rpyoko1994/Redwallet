@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+body {
+background-image: url(../src/assets/fondo.svg);
+background-color: black;
+background-repeat: no-repeat;
+background-size: cover;}
+
+.rojo{
+    color:#FF3B30;
+}
+
+.bg-rojo{
+    background-color:#FF3B30;
+}
+
+/* Estilos para la paginación personalizada */
+.custom-pagination {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: #FF3B30;
+  }
+  
+  .custom-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc; /* Color de los puntos inactivos */
+    opacity: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-pagination .swiper-pagination-bullet-active {
+    background-color: #FF3B30; /* Color del punto activo */
+  }
+
+ 
+
+.degradado{
+  background-image: url(../src/assets/fondo.svg);
+background-color: black;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.lineas{
+  background-image: url(../src/assets/Topografia.svg);
+background-repeat: no-repeat;
+}
+.degradado-rojo{
+background: rgb(253,1,9);
+background: linear-gradient(90deg, rgba(253,1,9,1) 0%, rgba(124,0,4,1) 49%);
+}
+.imagen{
+  background-image: url(../src/assets/sucio.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.degradado-pie{
+  background: rgb(40,0,0);
+background: linear-gradient(180deg, rgba(40,0,0,1) 0%, rgba(9,0,0,1) 49%);
+}
+
+.foto{
+  background-image: url(../src/assets/foto.svg);
+background-repeat: no-repeat;
+width: 44px;
+height: 44px;
+}
+.negativo{
+  margin-top: -27px;
+}
