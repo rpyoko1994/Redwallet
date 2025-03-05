@@ -52,13 +52,13 @@ const ForgotPassword = () => {
                     setError("");
                   }
                 }}
-                className="mt-1 block w-full px-4 py-4 bg-gray-800 text-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-1 block w-full px-4 py-4 bg-gray-800 text-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-rojo"
                 placeholder="Enter your new password"
                 required
               />
               {/* Mensaje de error debajo del campo de contraseña */}
               {error && password.length < 8 && (
-                <p className="text-red-500 text-sm mt-2 px-4">{error}</p>
+                <p className="text-rojo text-sm mt-2 px-4">{error}</p>
               )}
             </div>
 
@@ -67,7 +67,7 @@ const ForgotPassword = () => {
                 type="password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="mt-1 block w-full px-4 py-4 bg-gray-800 text-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                className="mt-1 block w-full px-4 py-4 bg-gray-800 text-white rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-rojo"
                 placeholder="Confirm your new password"
                 required
               />
@@ -80,7 +80,7 @@ const ForgotPassword = () => {
       <div className="w-full max-w-md p-4 h-96 items-end flex">
         <button
           onClick={handleSubmit}
-          className="w-full px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 focus:outline-none"
+          className="w-full px-4 py-2 bg-rojo text-white rounded-lg hover:bg-red-600 focus:outline-none"
         >
           Reset Password
         </button>

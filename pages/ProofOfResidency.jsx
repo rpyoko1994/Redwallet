@@ -46,7 +46,7 @@ function ProofOfResidency() {
           <div
             className={`w-full h-24 my-2 border-gray-600 rounded-2xl shadow-lg flex items-center justify-between p-6 border-2 ${
               selectedOption === "Identity"
-                ? "border-red-500 text-red-500 ring-red-500 focus:ring-red-500"
+                ? "border-red-500 text-rojo ring-red-500 focus:ring-red-500"
                 : "border-gray-600"
             }`}
           >
@@ -70,7 +70,7 @@ function ProofOfResidency() {
           <div
             className={`w-full h-24 my-2 border-gray-600 rounded-2xl shadow-lg flex items-center justify-between p-6 border-2 ${
               selectedOption === "Digital"
-                ? "border-red-500 text-red-500 ring-red-500 focus:ring-red-500"
+                ? "border-red-500 text-rojo ring-red-500 focus:ring-red-500"
                 : "border-gray-600"
             }`}
           >
@@ -95,7 +95,7 @@ function ProofOfResidency() {
           <div
             className={`w-full h-24 my-2 border-gray-600 rounded-2xl shadow-lg flex items-center justify-between p-6 border-2 ${
               selectedOption === "Passport"
-                ? "border-red-500 text-red-500 ring-red-500 focus:ring-red-500"
+                ? "border-red-500 text-rojo ring-red-500 focus:ring-red-500"
                 : "border-gray-600"
             }`}
           >

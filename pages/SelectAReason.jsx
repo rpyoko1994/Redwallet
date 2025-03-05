@@ -64,7 +64,7 @@ function SelectAReason() {
                 onClick={() => handleReasonSelect(reason)}
                 className={`p-2 pr-6 border-gray-800 bg-gray-800 border-2 rounded-lg text-left flex-grow ${
                   selectedReasons.includes(reason)
-                    ? "border-red-500 text-red-500"
+                    ? "border-rojo text-rojo"
                     : "border-gray-200 text-gray-400"
                 } hover:border-red-400 hover:text-red-400 transition`}
               >
@@ -90,7 +90,7 @@ function SelectAReason() {
                 onClick={() => handleReasonSelect(reason)}
                 className={`p-2 border-gray-800 bg-gray-800 border-2 rounded-lg text-left flex-grow ${
                   selectedReasons.includes(reason)
-                  ? "border-red-500 text-red-500"
+                  ? "border-rojo text-rojo"
                   : "border-gray-200 text-gray-400"
               } hover:border-red-400 hover:text-red-400 transition`}
               >
@@ -110,7 +110,7 @@ function SelectAReason() {
                 onClick={() => handleReasonSelect(reason)}
                 className={`p-2 border-gray-800 bg-gray-800 border-2 rounded-lg text-left flex-grow ${
                   selectedReasons.includes(reason)
-                  ? "border-red-500 text-red-500"
+                  ? "border-rojo text-rojo"
                   : "border-gray-200 text-gray-400"
               } hover:border-red-400 hover:text-red-400 transition`}
               >

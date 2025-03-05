@@ -42,7 +42,7 @@ function VerifySuccess() {
       <div className="absolute w-full bottom-0 p-4 flex flex-col">
         <button
           type="submit"
-          className="w-full flex flex-col bg-rojo text-white p-4 my-2 rounded-md hover:bg-yellow-300"
+          className="w-full flex flex-col bg-rojo text-white p-4 my-2 rounded-md"
         >
          Continue
         </button>

@@ -1,4 +1,5 @@
 import React from "react";
+import Sombra from "../component/Sombra";
 
 function PrivacyPolitic() {
   return (
@@ -72,6 +73,7 @@ function PrivacyPolitic() {
           anonymous so that it cannot identify certain users.
         </p>
       </div>
+      <Sombra />
     </div>
   );
 }
