@@ -23,7 +23,7 @@ const HistoryCrypto = () => {
           </svg>
         </button>
         <div className="text-center">
-          <h2 className="text-white text-lg font-semibold">History Crypto</h2>
+          <h2 className="text-white text-lg font-semibold">Transactions History</h2>
         </div>
         <div>
           <button onClick={() => window.history.back()} className="text-white">
@@ -33,7 +33,7 @@ const HistoryCrypto = () => {
       </div>
 
         <div className="text-gray-500 font-semibold">
-          <h2> 20 October 2024</h2>
+          <h2> 20 October 2022</h2>
         </div>
         <div className="w-full border-2 degrade my-3 border-gray-800 rounded-2xl p-4 flex items-center justify-between">
           <div className="flex items-center">
@@ -50,8 +50,8 @@ const HistoryCrypto = () => {
             </div>
           </div>
           <div className="text-start">
-            <div className=" text-red-500 font-semibold">- 250</div>
-            <div className="text-gray-500">$87.69</div>
+            <div className=" text-red-500 font-semibold text-end">- 250</div>
+            <div className="text-gray-500 text-end">$87.69</div>
           </div>
         </div>
 
@@ -70,8 +70,8 @@ const HistoryCrypto = () => {
             </div>
           </div>
           <div className="text-start">
-            <div className="text-white font-semibold">+ 150</div>
-            <div className="text-gray-500">$ 149.98</div>
+            <div className="text-white font-semibold text-end">+ 150</div>
+            <div className="text-gray-500 text-end">$ 149.98</div>
           </div>
         </div>
 
@@ -90,8 +90,8 @@ const HistoryCrypto = () => {
             </div>
           </div>
           <div className="text-start">
-            <div className="text-white font-semibold">0.500</div>
-            <div className="text-gray-500">9.594</div>
+            <div className="text-white font-semibold text-end">0.500</div>
+            <div className="text-gray-500 text-end">9.594</div>
           </div>
         </div>
 
@@ -113,7 +113,7 @@ const HistoryCrypto = () => {
             </div>
           </div>
           <div className="text-start">
-            <div className="text-green-300 font-semibold">+ $234.00</div>
+            <div className="text-green-300 font-semibold text-end">+ $234.00</div>
             
           </div>
         </div>
@@ -133,8 +133,8 @@ const HistoryCrypto = () => {
             </div>
           </div>
           <div className="text-start">
-            <div className="text-white font-semibold">+ 7.00</div>
-            <div className="text-gray-500">$196.47</div>
+            <div className="text-white font-semibold text-end">+ 7.00</div>
+            <div className="text-gray-500 text-end">$196.47</div>
           </div>
         </div>
         <div className="w-full border-2 degrade my-3 border-gray-800 rounded-2xl p-4 flex items-center justify-between">
@@ -152,8 +152,8 @@ const HistoryCrypto = () => {
             </div>
           </div>
           <div className="text-start">
-            <div className="text-white font-semibold">+ 1.000</div>
-            <div className="text-gray-500">350,62</div>
+            <div className="text-white font-semibold text-end">+ 1.000</div>
+            <div className="text-gray-500 text-end">350,62</div>
           </div>
         </div>
 
@@ -172,13 +172,14 @@ const HistoryCrypto = () => {
             </div>
           </div>
           <div className="text-start">
-            <div className="text-white font-semibold">+ 1.000</div>
-            <div className="text-gray-500">350,62</div>
+            <div className="text-white font-semibold text-end">+ 1.000</div>
+            <div className="text-gray-500 text-end">350,62</div>
           </div>
         </div>
         <div
-        className="fixed bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-900 to-transparent pointer-events-none"
-      ></div>
+        className="fixed bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-900 to-transparent pointer-events-none">
+
+      </div>
        
       </div>
     </div>

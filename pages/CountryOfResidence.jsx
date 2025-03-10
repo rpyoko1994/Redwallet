@@ -56,14 +56,16 @@ function CountryOfResidence() {
 
       {/* Título y párrafo */}
       <div className="w-full max-w-4xl mx-auto mt-2 p-4">
-        <h1 className="text-3xl font-bold text-white">
+        <h1 className="text-2xl font-bold text-white pb-2">
           What’s your citizenship?
         </h1>
         <p className="text-gray-500 mt-2 pr-14">
           If you’re a citizen of more than one country, please pick one.
         </p>
       </div>
-
+       <div className="text-white text-lg px-4" >
+        Citizenship
+       </div>
       {/* Botón para abrir el buscador */}
       {!isSearchOpen && (
         <div className="flex-grow flex items-start justify-center p-4">
@@ -139,7 +141,7 @@ function CountryOfResidence() {
           {/* Contenido del buscador */}
           {/* Título del buscador */}
           <h2 className="text-2xl font-bold mb-4 p-4">Select your Country</h2>
-          <div className="p-4 m-4 bg-gray-800 rounded-2xl">
+          <div className="p-4 m-4  rounded-2xl">
             {/* Campo de búsqueda con ícono */}
             <div className="relative">
               <input
@@ -147,7 +149,7 @@ function CountryOfResidence() {
                 placeholder="Search for a country..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-gray-700 text-white p-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500
+                className="w-full bg-gray-700 text-white p-4 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500
                 "
                 autoFocus // Abre el teclado automáticamente en dispositivos móviles
               />
@@ -158,7 +160,7 @@ function CountryOfResidence() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-6 h-6 absolute left-2 top-2 text-gray-400"
+                className="w-6 h-6 absolute left-2 top-4 text-gray-400"
               >
                 <path
                   strokeLinecap="round"
@@ -169,7 +171,7 @@ function CountryOfResidence() {
             </div>
 
             {/* Sugerencias de países */}
-            <div className="mt-4">
+            <div className="mt-4 bg-gray-800 rounded-2xl">
               {filteredCountries.map((country, index) => (
                 <div
                   key={index}
@@ -182,7 +184,7 @@ function CountryOfResidence() {
                 >
                   <Flag
                     code={country.code} // Código ISO del país
-                    className="w-8 h-8 rounded-full"
+                    className="w-8 h-8  rounded-full"
                   />
                   <span className="text-medium font-bold">{country.name}</span>
                 </div>

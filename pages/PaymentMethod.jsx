@@ -31,13 +31,13 @@ const PaymentMethod = () => {
               : "border-gray-600"
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center py-2">
             <div className="w-10 h-10   rounded-full mr-4">
               <img src="../src/assets/bofa.svg"></img>
             </div>
             <div className="text-start">
-              <div className="text-white font-semibold">Bank of American</div>
-              <div className="text-gray-500">Checked automatically</div>
+              <div className="text-white font-semibold">Bank of America</div>
+              <div className="text-gray-500 text-sm">Checked automatically</div>
             </div>
           </div>
           <label className="flex items-center space-x-2">
@@ -59,13 +59,13 @@ const PaymentMethod = () => {
               : "border-gray-600"
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center py-2">
             <div className="w-10 h-10   rounded-full mr-4">
               <img src="../src/assets/Barclays.svg"></img>
             </div>
             <div className="text-start">
               <div className="text-white font-semibold">Barclays</div>
-              <div className="text-gray-500">Your verification status</div>
+              <div className="text-gray-500 text-sm">Checked automatically</div>
             </div>
           </div>
           <label className="flex items-center space-x-2">
@@ -87,13 +87,13 @@ const PaymentMethod = () => {
               : "border-gray-600"
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center py-2">
             <div className="w-10 h-10   rounded-full mr-4">
               <img src="../src/assets/fargo.svg"></img>
             </div>
             <div className="text-start">
               <div className="text-white font-semibold">Wells Fargo</div>
-              <div className="text-gray-500">Checked automatically</div>
+              <div className="text-gray-500 text-sm">Checked automatically</div>
             </div>
           </div>
           <label className="flex items-center space-x-2">
@@ -108,8 +108,8 @@ const PaymentMethod = () => {
           </label>
         </div>
       </div>
-      <div className="px-6 pb-2">
-        <div className="text-white text-xl font-semibold mb-4">
+      <div className="px-6 py-2">
+        <div className="text-white text-xl font-semibold mb-2">
           Credit / Debit Card
         </div>
 
@@ -120,13 +120,13 @@ const PaymentMethod = () => {
               : "border-gray-600"
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center py-2">
             <div className="w-10 h-10   rounded-full mr-4">
               <img src="../src/assets/visa.svg"></img>
             </div>
             <div className="text-start">
               <div className="text-white font-semibold">Visa</div>
-              <div className="text-gray-500">**** **** **** 4567</div>
+              <div className="text-gray-500 text-sm">**** **** **** 4567</div>
             </div>
           </div>
           <label className="flex items-center space-x-2">
@@ -140,7 +140,7 @@ const PaymentMethod = () => {
             />
           </label>
         </div>
-
+        <div className="pb-2"></div>
         <div
           className={`w-full border-2 border-gray-800 rounded-2xl p-4 flex items-center justify-between ${
             selectedOption === "Mastercard"
@@ -148,13 +148,13 @@ const PaymentMethod = () => {
               : "border-gray-600"
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center py-2">
             <div className="w-10 h-10  rounded-full mr-4">
               <img src="../src/assets/mastercard.svg"></img>
             </div>
             <div className="text-start">
               <div className="text-white font-semibold">Mastercard</div>
-              <div className="text-gray-500">**** **** **** 3456</div>
+              <div className="text-gray-500 text-sm">**** **** **** 3456</div>
             </div>
           </div>
           <label className="flex items-center space-x-2">
@@ -180,13 +180,13 @@ const PaymentMethod = () => {
               : "border-gray-600"
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center py-2">
             <div className="w-10 h-10 rounded-full mr-4">
               <img src="../src/assets/paypal.svg"></img>
             </div>
             <div className="text-start">
               <div className="text-white font-semibold">Paypal</div>
-              <div className="text-gray-500">Checked automatically</div>
+              <div className="text-gray-500 text-sm">Checked automatically</div>
             </div>
           </div>
           <label className="flex items-center space-x-2">
@@ -201,6 +201,7 @@ const PaymentMethod = () => {
           </label>
         </div>
       </div>
+      <div className="h-14"></div>
 
       <div className="w-full fixed bottom-0 p-4 h-24 degradado">
         <button

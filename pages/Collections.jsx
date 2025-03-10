@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import NavbarRetroceso from "../component/NavbarRetroceso";
+
 
 const Collections = () => {
   const [count, setCount] = useState(0.5);

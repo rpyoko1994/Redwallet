@@ -34,7 +34,7 @@ function UploadPhoto() {
           </h2>
         </div>
         <div className="items-center flex flex-col pt-4">
-          <h2 className="text-gray-500 texs-xs text-center px-14">
+          <h2 className="text-gray-500 texs-xs text-center px-10">
             To help protect you from fraud and identity theft, and to comly with
             federal regulations, wee need some info.
           </h2>
@@ -43,9 +43,9 @@ function UploadPhoto() {
       <div className="absolute w-full bottom-0 p-4 flex flex-col">
         <button
           type="submit"
-          className="w-full flex flex-col bg-rojo text-white p-4 my-2 rounded-md hover:bg-yellow-300"
+          className="w-full flex flex-col bg-rojo text-white p-4 my-2 rounded-md hover:bg-red-500"
         >
-         Continue
+          Continue
         </button>
       </div>
     </div>

@@ -48,7 +48,7 @@ const HistoryCrypto = () => {
         <div className="mb-6 py-8 px-6 border-b border-gray-800 flex items-center">
           <input
             type="text"
-            placeholder="Search transactions..."
+            placeholder="Q Search transactions..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onFocus={() => setIsKeyboardVisible(true)} // Mostrar teclado al enfocar
@@ -78,7 +78,6 @@ const HistoryCrypto = () => {
           )}
         </div>
 
-        {/* Lista de transacciones */}
         <div>
           <div className="px-6 ">
             <div className="w-full border-2 degrade border-gray-800 rounded-2xl p-4 flex items-center justify-between my-3">
@@ -96,15 +95,15 @@ const HistoryCrypto = () => {
                 </div>
               </div>
               <div className="text-start">
-                <div className="font-semibold">$19,073.00</div>
-                <div className="text-green-300 flex items-center">
+                <div className="text-end">$19,073.00</div>
+                <div className="text-green-300 flex items-center text-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-4 mr-2 text-green-300 transform rotate-180"
+                    className="size-4 mr-1 text-green-300 transform rotate-180"
                   >
                     <path
                       strokeLinecap="round"
@@ -135,15 +134,15 @@ const HistoryCrypto = () => {
                 </div>
               </div>
               <div className="text-start">
-                <div className="font-semibold">$269.75</div>
-                <div className="text-green-300 flex items-center">
+                <div className=" text-end">$269.75</div>
+                <div className="text-green-300 flex items-center text-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-4 mr-2 text-green-300"
+                    className="size-4 mr-1 text-green-300"
                   >
                     <path
                       strokeLinecap="round"
@@ -173,15 +172,15 @@ const HistoryCrypto = () => {
                 </div>
               </div>
               <div className="text-start">
-                <div className="font-semibold">$0,7869</div>
-                <div className="text-red-500 flex items-center">
+                <div className="text-end">$0,7869</div>
+                <div className="text-red-500 flex items-center text-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-4 mr-2 text-red-500 rotate-180"
+                    className="size-4 mr-1 text-red-500 rotate-180"
                   >
                     <path
                       strokeLinecap="round"
@@ -210,15 +209,15 @@ const HistoryCrypto = () => {
                 </div>
               </div>
               <div className="text-start">
-                <div className="font-semibold">$0,7869</div>
-                <div className="text-red-500 flex items-center">
+                <div className="font-semibold text-end">$0,7869</div>
+                <div className="text-rojo flex items-center text-end">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-4 mr-2 text-red-500 rotate-180"
+                    className="size-4 mr-2 text-rojo rotate-180"
                   >
                     <path
                       strokeLinecap="round"
@@ -244,7 +243,7 @@ const HistoryCrypto = () => {
           <div className="flex flex-col space-y-2 mb-2">
             {(isNumericKeyboard ? numericKeyboard : qwertyKeyboard).map(
               (row, rowIndex) => (
-                <div key={rowIndex} className="flex justify-center space-x-2">
+                <div key={rowIndex} className="flex justify-center space-x-1">
                   {row.map((key) => (
                     <button
                       key={key}
@@ -293,13 +292,13 @@ const HistoryCrypto = () => {
               onClick={() => handleKeyPress(" ")}
               className="w-1/2 mx-2 p-2 bg-gray-700 rounded-lg text-white"
             >
-              Espacio
+              Space
             </button>
 
             {/* Botón Go */}
             <button
               onClick={() => handleKeyPress("Go")}
-              className="w-1/4 p-2 bg-red-500 rounded-lg text-white"
+              className="w-1/4 p-2 bg-rojo rounded-lg text-white"
             >
               Go
             </button>

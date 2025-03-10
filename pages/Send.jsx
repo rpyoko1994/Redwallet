@@ -7,10 +7,10 @@ const Send = () => {
   const [selectedCrypto, setSelectedCrypto] = useState({
     code: "BTC",
     name: "Bitcoin",
-    image: "../src/assets/Bitcoin.svg", 
-  }); 
-  const [amount, setAmount] = useState(""); 
-  const [sentTo, setSentTo] = useState(""); 
+    image: "../src/assets/Bitcoin.svg",
+  });
+  const [amount, setAmount] = useState("");
+  const [sentTo, setSentTo] = useState("");
 
   const handleSelect = (index) => {
     setSelected(index);
@@ -19,9 +19,21 @@ const Send = () => {
   const cryptos = [
     { code: "BTC", name: "Bitcoin", image: "../src/assets/Bitcoin.svg" },
     { code: "ETH", name: "Ethereum", image: "../src/assets/Ethereum.svg" },
-    { code: "LTC", name: "Litecoin", image: "https://cryptologos.cc/logos/litecoin-ltc-logo.png" },
-    { code: "XRP", name: "Ripple", image: "https://cryptologos.cc/logos/litecoin-ltc-logo.png" },
-    { code: "BCH", name: "Bitcoin Cash", image: "../src/assets/Bitcoin-Cash.svg" },
+    {
+      code: "LTC",
+      name: "Litecoin",
+      image: "https://cryptologos.cc/logos/litecoin-ltc-logo.png",
+    },
+    {
+      code: "XRP",
+      name: "Ripple",
+      image: "https://cryptologos.cc/logos/litecoin-ltc-logo.png",
+    },
+    {
+      code: "BCH",
+      name: "Bitcoin Cash",
+      image: "../src/assets/Bitcoin-Cash.svg",
+    },
   ];
 
   const buttons = [
@@ -51,10 +63,9 @@ const Send = () => {
             <div className="absolute left-4 top-2 text-sm text-gray-400">
               Amount
             </div>{" "}
-           
             <input
               value={amount} // Valor controlado por el estado
-              onChange={(e) => setAmount(e.target.value)} 
+              onChange={(e) => setAmount(e.target.value)}
               className="w-full px-4 py-2 pt-8 rounded-xl bg-gray-800 text-lg border-2 border-gray-500 hover:border-red-500 focus:border-red-500"
               placeholder="0.8796"
               type="text"
@@ -64,7 +75,7 @@ const Send = () => {
               className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-4 rounded-lg hover:bg-red-500 flex items-center"
             >
               <img
-                src={selectedCrypto.image} 
+                src={selectedCrypto.image}
                 alt="Crypto Icon"
                 className="w-5 h-5 mr-2"
               />

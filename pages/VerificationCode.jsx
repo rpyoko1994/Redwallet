@@ -41,7 +41,7 @@ function VerificationCode() {
       <Navbar/>
 
       <h1 className="text-2xl font-bold text-white mt-8">Authentication Code</h1>
-      <p className="text-gray-500 mt-2">Enter 5-digit code we just texted to your phone number, +1 8976889043</p>
+      <p className="text-gray-500 mt-2 pr-4">Enter 5-digit code we just texted to your phone number, +1 8976889043</p>
 
       <div
         className={`flex flex-col items-center my-24 ${
@@ -53,7 +53,7 @@ function VerificationCode() {
             <div
               key={index}
               onClick={showKeyboard}
-              className={`w-12 h-12 rounded-lg border-2 ${
+              className={`w-16 h-16 rounded-lg border-2 ${
                 activeIndex === index ? "border-red-500" : "bg-gray-800"
               } flex items-center justify-center cursor-pointer transition-colors`}
             >
@@ -62,7 +62,7 @@ function VerificationCode() {
           ))}
         </div>
 
-        <div className="text-sm px-4 w-full text-gray-500">
+        <div className="text-sm p-4 w-full text-gray-500">
           <h2 className="text-start">Use different phone number</h2>
         </div>
 
@@ -71,13 +71,13 @@ function VerificationCode() {
           <div className="w-full flex flex-col space-y-2 mt-4 px-4">
             <button
               onClick={handleCreatecode}
-              className="w-full bg-red-500 text-white font-bold py-2 rounded-lg hover:bg-red-600 transition"
+              className="w-full bg-rojo text-white font-bold py-4 rounded-lg hover:bg-red-600 transition"
             >
               Continue
             </button>
             <button
               onClick={handleSkip}
-              className="w-full text-red-500 bg-gray-800 font-bold py-2 rounded-lg hover:bg-red-50 transition"
+              className="w-full text-rojo bg-gray-800 font-bold py-4 rounded-lg hover:bg-red-50 transition"
             >
               Resent Code
             </button>
